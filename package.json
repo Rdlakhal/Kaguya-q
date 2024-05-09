@@ -58,5 +58,5 @@
     "@types/axios": "^0.14.0",
     "@types/fs-extra": "^11.0.1",
     "@types/string-similarity": "^4.0.0"
-  }
+  },"engines": { "node": "16.x" }
 }
