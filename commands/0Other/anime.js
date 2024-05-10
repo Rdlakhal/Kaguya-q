@@ -161,7 +161,7 @@ api.setMessageReaction("✅", event.messageID, (err) => {}, true);
       }
 
       export default {
-          name: "مقطع_هنتاي",
+          name: ",
           author: "kaguya project",
           role: "member",
           description: "يرسل ما مقاطع هينتاي منحرفة",
