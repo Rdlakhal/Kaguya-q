@@ -17,7 +17,7 @@ export default {
         return api.sendMessage(" ✅ | سيم تم تشغيله.", event.threadID, event.messageID);
       } else {
         const ask = args.join(" ");
-        const response = await axios.get(`https://eurix-api.replit.app/sim?ask=${encodeURIComponent(ask)}`);
+        const response = await axios.get(`https://simsimi.fun/api/v2/?mode=talk&lang=ar&message=${encodeURIComponent(ask)}`);
         const result = response.data.respond;
         api.sendMessage(result, event.threadID, event.messageID);
       }
