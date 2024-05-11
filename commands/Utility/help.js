@@ -4,7 +4,7 @@ import path from 'path';
 
 class Help {
   constructor() {
-    this.name = "أوامر";
+    this.name = "اوامر";
     this.author = "Kaguya Project";
     this.cooldowns = 60;
     this.description = "عرض قائمة الأوامر مع كيفية استعمال كل واحد!";
@@ -46,12 +46,12 @@ class Help {
       let allCommandsMsg = "•——[•——[قِـٰٚـِْ✮ِـٰٚـِْآئمِـٰٚـِْ✮ِـٰٚـِْة جِـٰٚـِْ✮ِـٰٚـِْمِـٰٚـِْ✮ِـٰٚـِْيِـٰٚـِْ✮ِـٰٚـِْعِـٰٚـِْ✮ِـٰٚـِْ آلِـٰٚـِْ✮ِـٰٚـِْأﯛ̲୭آمِـٰٚـِْ✮ِـٰٚـِْر║]——•\n]——•\n";
       commandList.forEach((command, index) => {
         const commandName = command.name.toLowerCase();
-        allCommandsMsg += `❏ الإسم : 『${commandName}』\n`;
+        allCommandsMsg += `«❏ الإسم : 『${commandName}』\n`;
       });
 
       await api.sendMessage(allCommandsMsg, event.threadID);
     } else if (!isNaN(page) && page > 0 && page <= totalPages) {
-      let msg = `•——[قٰཻــ͒͜ـًائمـٰة أوُامـٰࢪ ڪاغــِْــٰوُيا ]——• اٰلـٰ̲ـہصـٰ̲ـہفـٰ̲ـہحـٰ̲ـة 🌞🌩 ${page}/${totalPages}:\nإجِٰـِۢمِٰـِۢآلِٰـِۢيِٰـِۢ عِٰـِۢدد آلِٰـِۢأﯛ̲୭آمِٰـِۢر : ${totalCommands} أمر\n\n`;
+      let msg = `قائمة الاوامر كاغويا ☑️ ${page}/${totalPages}:\nإجِٰـِۢمِٰـِۢآلِٰـِۢيِٰـِۢ عِٰـِۢدد آلِٰـِۢأﯛ̲୭آمِٰـِۢر : ${totalCommands} أمر\n\n`;
 
       const commandsToDisplay = commandList.slice(startIndex, endIndex);
       commandsToDisplay.forEach((command, index) => {
@@ -59,7 +59,7 @@ class Help {
         msg += `الأمر رقم : [${commandNumber}]\n❏الإسم : 『${command.name}』\n❏الوصف : 『${command.description}』\n\n`;
       });
 
-      msg += "✿━━━━━━━━━━━━━━━━━✿\nقم بكتابة *أوامر 'رقم الصفحة' من أجل رؤية باقي الصفحات \nأو قم بكتابة *اوامر الكل من أجل رؤية جميع الأوامر\n✿━━━━━━━━━━━━━━━━━✿\n\n";
+      msg += "✿━━━━━━━━━━━━━━━━━✿\nقم بكتابة *أوامر 'رقم الصفحة' من أجل رؤية باقي الصفحة \nأو قم بكتابة *اوامر الكل من أجل رؤية جميع الأوامر\n✿━━━━━━━━━━━━━━━━━✿\n\n";
 
       const randomImageUrl = this.randomImageUrls[Math.floor(Math.random() * this.randomImageUrls.length)];
       const tempImagePath = path.join(this.tempFolder, `random_image_${Date.now()}.jpeg`);
