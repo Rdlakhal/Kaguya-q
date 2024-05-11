@@ -2,7 +2,7 @@ import axios from "axios";
 import fs from "fs-extra";
 
 export default {
-  name: "تخيلي3",
+  name: "تخيل",
   author: "حسين يعقوبي",
   cooldowns: 60,
   description: "توليد صورة استنادًا إلى النص المدخل",
