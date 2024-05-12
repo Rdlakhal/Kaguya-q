@@ -1,5 +1,5 @@
 export default {
-    name: "اقتباسات_عشوائية",
+    name: "اقتباس",
     author: "kaguya project",
     role: "member",
     description: "يرسل اقتباسات عشوائية مختارة مسبقًا.",
