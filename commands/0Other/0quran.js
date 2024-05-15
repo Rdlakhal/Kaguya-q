@@ -67,7 +67,7 @@ api.setMessageReaction("✅", event.messageID, (err) => {}, true);
       }
 
       export default {
-          name: "قرآن",
+          name: "قران",
           author: "kaguya project",
           role: "member",
           description: "يرسل ما تيسر من القرآن",
