@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 
 export default {
-  name: "مقطع_أنمي2",
+  name: "انمي",
   author: "kaguya project",
   role: "member",
   description: "توليد مقاطع فيديو أنمي عشوائية.",
