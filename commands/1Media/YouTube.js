@@ -3,7 +3,7 @@ import fs from "fs";
 import { Innertube, UniversalCache } from 'youtubei.js';
 
 export default {
-  name: "يوتيوب",
+  name: "فيديو",
   author: "Kaguya Project",
   description: "يجلب مقاطع من اليوتيوب بواسطة كلمة البحث",
   role: "member",
