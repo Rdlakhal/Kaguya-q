@@ -1,5 +1,5 @@
 class Threads {
-  name = "المجموعة";
+  name = "لاست";
   author = "Kaguya Project";
   cooldowns = 0;
   description = "منع المجموعات من استخدام البوت";
@@ -9,7 +9,7 @@ class Threads {
     if (!event.isGroup) return kaguya.reply(" ⚠️ |لا يمكن استخدام هذا الأمر إلا في مجموعات");
     var [type, reason = " ⚠️ |لم يتم إعطاء السبب"] = args;
     switch (type) {
-      case "قائمة": {
+      case "بوكس": {
         var { data } = await Threads.getAll();
         var msgArray = data.map((value, index) => {
           return `${index + 1}. المعرف : ${value.threadID} - أعضاء المجموعة : ${value.data.members}\nإسم المجموعة : ${value.data.name}\n`;
