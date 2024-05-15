@@ -3,7 +3,7 @@ import fs from "fs-extra";
 import path from "path";
 
 export default {
-  name: "كاغويا",
+  name: "بوت",
   author: "ChatGPT",
   description: "نموذج للدردشة مع GPT-4 وإرفاق صورة ذات صلة",
   role: "member",
