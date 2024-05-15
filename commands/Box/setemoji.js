@@ -2,7 +2,7 @@ import fs from "fs";
 const emojiJSON = JSON.parse(fs.readFileSync("./cache/emoji/emoji.json", "utf-8"));
 
 class setimg {
-  name = "ضبط_إيموجي";
+  name = "ايموجي";
   author = "Kaguya Project";
   cooldowns = 60;
   descriptions = "تغيير إيموجي المجموعة";
