@@ -4,7 +4,7 @@ import ytdl from 'ytdl-core';
 import yts from 'yt-search';
 
 export default {
-  name: "أغنية",
+  name: "سمعني",
   author: "حسين يعقوبي",
   cooldowns: 60,
   description: "تنزيل أغنية من YouTube",
@@ -17,14 +17,14 @@ export default {
     const data = input.split(" ");
 
     if (data.length < 2) {
-      return api.sendMessage("⚠️ | أرجوك قم بإدخال اسم الأغنية.", event.threadID);
+      return api.sendMessage("⚠️ | أرجوك قم  بأدخال بحثك ", event.threadID);
     }
 
     data.shift();
     const musicName = data.join(" ");
 
     try {
-      api.sendMessage(`✔ | جاري البحث عن الأغنية المطلوبة"${musicName}". المرجو الانتظار...`, event.threadID);
+      api.sendMessage(`✔ | جاري البحث عن صوت المطلوب"${musicName}". المرجو الانتظار...`, event.threadID);
 
       const searchResults = await yts(musicName);
       if (!searchResults.videos.length) {
@@ -47,7 +47,7 @@ export default {
 
       stream.on('info', (info) => {
         console.info('[DOWNLOADER]', `تنزيل الأغنية: ${info.videoDetails.title}`);
-      });
+      })
 
       stream.on('end', () => {
         console.info('[DOWNLOADER] تم التنزيل');
