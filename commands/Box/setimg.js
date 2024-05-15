@@ -1,7 +1,7 @@
 import axios from "axios";
 import fs from "fs";
 class setimg {
-  name = "ضبط_الصورة";
+  name = "وضع";
   author = "Kaguya Project";
   cooldowns = 60;
   descriptions = "تغيير صورة المجموعة";
