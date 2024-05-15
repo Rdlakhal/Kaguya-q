@@ -187,7 +187,7 @@ const animeImageLinks = [
 ];
 
 export default {
-  name: "افلام",
+  name: "فلم",
   author: "Kaguya Project",
   role: "member",
   description: "يقترح عليك افلام عشوائية من اجل مشاهدتها",
