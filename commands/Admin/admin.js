@@ -1,7 +1,7 @@
 import fs from "fs";
 
 class Admin {
-  name = "آدمن";
+  name = "ادمن";
   author = "Kaguya Project";
   cooldowns = 60;
   description = "إضافة أو إزالة أو تعيين رتبة المسؤول";
