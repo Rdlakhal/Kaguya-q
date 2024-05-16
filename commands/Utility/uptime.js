@@ -14,7 +14,7 @@ export default {
     const hours = Math.floor(uptime / 3600);
     const minutes = Math.floor((uptime - (hours * 3600)) / 60);
     const seconds = Math.floor(uptime % 60);
-    const uptimeStr = `«« البوت كان شغالا منذ ${hours} 𝑯 ساعة ، ${minutes} دقيقة 𝒆𝑴 ، و ${seconds} 𝑺 ثانية`;
+    const uptimeStr = `  البوت كان شغالا منذ ${hours} 𝑯 ساعة ، ${minutes} دقيقة 𝒆𝑴 ، و ${seconds} 𝑺 ثانية`;
 
     const threads = await api.getThreadList(99999, null, ['INBOX']);
 
@@ -31,8 +31,8 @@ export default {
 
     const output = `🤖 |حالة سيرفر 🌐\n\n` +
       `الوقت الحالي ☑️: ${currentTime},\n` +
-      `إجمالي عدد المستخدمين 👥: ${userCount}\n` +
-      `إجمالي عدد المجموعات 〽️: ${groupCount}\n\n` +
+      `إجمالي عدد المستخدمين 👥»: ${userCount}\n` +
+      `إجمالي عدد المجموعات 〽️»: ${groupCount}\n\n` +
       `${uptimeStr}`;
 
     api.sendMessage(output, event.threadID);
