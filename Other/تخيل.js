@@ -2,7 +2,7 @@ import axios from "axios";
 import fs from "fs-extra";
 
 export default {
-  name: "تخيلي2",
+  name: "ارسمي",
   author: "حسين يعقوبي",
   cooldowns: 60,
   description: "توليد صورة استنادًا إلى النص المدخل",
@@ -16,7 +16,7 @@ export default {
       const translatedQuery = translationResponse?.data?.[0]?.[0]?.[0];
 
       if (!translatedQuery) {
-        throw new Error("فشل الترجمة أو الناتج كان فارغًا.");
+        throw new Error("🙂 صف شيئا يمكن رسمه 🤦🏻‍♀️");
       }
 
       const { threadID, messageID } = event;
