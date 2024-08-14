@@ -43,7 +43,7 @@ async function sendRandomAudioClip({ api, event }) {
 
               writeStream.on("finish", async () => {
                 
-api.setMessageReaction("✅", event.messageID, (err) => {}, true);
+api.setMessageReaction("🎧", event.messageID, (err) => {}, true);
                 
                   await api.sendMessage({
                       body: '{وَإِذَا قَرَأَ الْقُرْآنَ فَاسْتَمِعُوا لَهُ وَأَنْصِتُوا لَعَلَّكُمْ تُرْحَمُونَ.}',
