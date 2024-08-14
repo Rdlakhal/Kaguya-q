@@ -8,7 +8,7 @@ export default {
   role: "member",
   description: "توليد مقاطع فيديو أنمي عشوائية.",
   async execute({ api, event, message }) {
-    api.setMessageReaction("🕐", event.messageID, (err) => {}, true);
+    api.setMessageReaction("🖌️", event.messageID, (err) => {}, true);
 
     try {
       const response = await axios.get("https://ani-vid.onrender.com/kshitiz");
