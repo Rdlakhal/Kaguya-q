@@ -213,7 +213,7 @@ export default {
       });
     } catch (error) {
       console.error("حدث خطأ: ", error);
-      api.sendMessage("❌ | حدث خطأ أثناء جلب صورة أنمي.", event.threadID);
+      api.sendMessage("حدث خطأ.Pe folt.مراجعة", event.threadID);
     }
   },
 };
