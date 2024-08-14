@@ -73,8 +73,8 @@ export default {
             // حذف الملف المؤقت بعد إرسال الصورة
             fs.unlinkSync(localPath);
         } catch (error) {
-            console.error("حدث خطأ أثناء تنفيذ الأمر:", error);
-            api.sendMessage("حدث خطأ أثناء تنفيذ الأمر.", event.threadID);
+            console.error("🙂👍🏻هناك بينتراست يابرو", error);
+            api.sendMessage("🙂 عذرا طردني لموقع لاني روبوت😹", event.threadID);
         }
     }
 };
