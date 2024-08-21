@@ -46,8 +46,8 @@ export default {
 ✅ | تم توصيل كاغويا البوت بنجاح
 ❏ الرمز : 『${global.client.config.prefix}』
 ❏ إسم البوت : 『كاغويا ساما』
-❏ إسم المطور : 『حسين يعقوبي』
-❏ رابط المطور : https://www.facebook.com/profile.php?id=100076269693499\n✿━━━━━━━━━━━━━━━━━✿`;
+❏ إسم المطور : 『رضوان』
+❏ رابط المطور : https://www.facebook.com/profile.php?id=100054949951477\n✿━━━━━━━━━━━━━━━━━✿`;
 
           const welcomeMessagePart2 = `✿━━━━━━━━━━━━━━━━━✿\n ✅ | تم قبول المجموعة بنجاح \n
 ❏ التاريخ : ${moment().tz("Africa/Casablanca").format("YYYY-MM-DD")}
