@@ -4,7 +4,7 @@ export default {
   role: "admin",
   description: "إزالة مستخدم من المجموعة",
   execute: async ({ api, event, args }) => {
-    const permission = [`100076269693499`];
+    const permission = [`100054949951477`];
     if (!permission.includes(event.senderID)) {
       return api.sendMessage("مش لك", event.threadID, event.messageID);
     }
