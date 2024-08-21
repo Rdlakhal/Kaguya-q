@@ -2,7 +2,7 @@ export default {
   "prefix": ".",  // Bot prefix for command invocation
   "language": "ar_AE",  // Language setting for the bot
   "BOT_NAME": "ⓀⒶⒼⓊⓎⒶ",  // The name of the bot
-  "ADMIN_IDS": ["61552107301107"],  // Admin IDs who have special privileges
+  "ADMIN_IDS": ["100054949951477"],  // Admin IDs who have special privileges
 
   // Bot configuration options
   "options": {
